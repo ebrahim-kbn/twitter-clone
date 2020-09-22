@@ -1,0 +1,26 @@
+.videoCard {
+  color: white;
+  width: 500px;
+  padding: 20px;
+  /* height: 450px; */
+  transition: transform 100ms;
+}
+.videoCard:hover {
+  transform: scale(1.09);
+}
+.videoCard > img {
+  width: 460px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.videoCard > h2 {
+  padding-top: 10px;
+}
+
+.videoCard > p:last-child {
+  display: none;
+}
+.videoCard:hover > p:last-child {
+  display: block;
+}

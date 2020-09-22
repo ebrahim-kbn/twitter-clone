@@ -1,0 +1,44 @@
+.widgets {
+  flex: 0.3;
+  /* width: 30%; */
+  overflow-y: auto;
+}
+@media screen and (max-width: 480px) {
+  .widgets {
+    flex: 0;
+  }
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.widgets::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.widgets {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.widgets__input {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px 0 0 20px;
+}
+.widgets__input > input {
+  background-color: var(--twitter-background);
+  border: none;
+  outline: none;
+}
+.widgets__widgetContainer {
+  background-color: #f5f8fe;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 15px 0 0 20px;
+}
+
+.widgets__widgetContainer > h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
